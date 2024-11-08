@@ -1,3 +1,6 @@
+### Entangled 1.3.20
+- Fixed the WAILA/Jade/The One Probe showing air when the bound block is far away
+
 ### Entangled 1.3.19
 - Added a config option to allow whitelisting blocks rather than blacklisting
 - Added Russian translations (thanks to EnderDrag0n!)
