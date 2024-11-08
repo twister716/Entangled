@@ -1,3 +1,6 @@
+### Entangled 1.3.20
+- Fixed the WAILA/Jade/The One Probe showing air when the bound block is far away
+
 ### Entangled 1.3.19a
 - Fixed entangled block querying capabilities from its dimension, rather than the bound block's dimension
 
