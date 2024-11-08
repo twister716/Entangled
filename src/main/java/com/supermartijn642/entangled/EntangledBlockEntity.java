@@ -108,9 +108,11 @@ public class EntangledBlockEntity extends BaseBlockEntity implements TickableBlo
 
     @Override
     public void update(){
-        boolean forceLoad = this.boundBlockState == null
-            || (this.boundBlockEntity == null ? this.boundBlockState.hasBlockEntity() : this.boundBlockEntity.isRemoved())
-            || this.analogOutputSignal == -1;
+        boolean forceLoad = !this.level.isClientSide && (
+            this.boundBlockState == null
+                || (this.boundBlockEntity == null ? this.boundBlockState.hasBlockEntity() : this.boundBlockEntity.isRemoved())
+                || this.analogOutputSignal == -1
+        );
         this.updateBoundBlockData(forceLoad);
         if(!this.level.isClientSide && this.revalidate){
             if(this.bound){
